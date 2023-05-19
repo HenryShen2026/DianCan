@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <FrameLayout
+        android:id="@+id/framelayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout_nav"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout_nav"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#FF9800"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/nav_profile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/nav_user"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:text="會員資料"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/nav_order"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/nav_hamburgersoda"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:text="點餐"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/nav_home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/nav_home"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:text="首頁"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/nav_act"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/marker"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:text="商店資訊"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/nav_cart"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/nav_shoppingcart"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:text="購物車"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/linearLayout"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="80dp"-->
+<!--        android:orientation="horizontal"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/textView_profile"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="1"-->
+<!--            android:background="@drawable/border_grey"-->
+<!--            android:drawableTop="@drawable/member_info"-->
+<!--            android:paddingTop="10dp"-->
+<!--            android:text="會員資料"-->
+<!--            android:textAlignment="center"-->
+<!--            android:textColor="#FF5722"-->
+<!--            android:textSize="16sp" />-->
+
+<!--&lt;!&ndash;        <ImageButton&ndash;&gt;-->
+<!--&lt;!&ndash;            android:id="@+id/btn_profile"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_weight="1"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:onClick="setProfile"&ndash;&gt;-->
+<!--&lt;!&ndash;            app:srcCompat="@android:drawable/btn_star_big_on" />&ndash;&gt;-->
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/btn_order"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="1"-->
+<!--            app:srcCompat="@android:drawable/btn_star_big_on"-->
+<!--            tools:ignore="SpeakableTextPresentCheck" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/textView_home"-->
+<!--            android:layout_width="50dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="1"-->
+<!--            android:background="@drawable/border_grey"-->
+<!--            android:drawableTop="@drawable/home"-->
+<!--            android:paddingTop="10dp"-->
+<!--            android:text="首頁"-->
+<!--            android:textAlignment="center"-->
+<!--            android:textColor="#FF5722"-->
+<!--            android:textSize="16sp" />-->
+<!--&lt;!&ndash;        <ImageButton&ndash;&gt;-->
+<!--&lt;!&ndash;            android:id="@+id/btn_home"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_weight="1"&ndash;&gt;-->
+<!--&lt;!&ndash;            app:srcCompat="@android:drawable/btn_star_big_on" />&ndash;&gt;-->
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/btn_store"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="1"-->
+<!--            app:srcCompat="@android:drawable/btn_star_big_on"-->
+<!--            tools:ignore="SpeakableTextPresentCheck" />-->
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/btn_event"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="1"-->
+<!--            app:srcCompat="@android:drawable/btn_star_big_on"-->
+<!--            tools:ignore="SpeakableTextPresentCheck" />-->
+<!--    </LinearLayout>-->
+</androidx.constraintlayout.widget.ConstraintLayout>
