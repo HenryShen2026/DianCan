@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFECB3"
+    tools:context=".fragment.RegisterFragment" >
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="REGISTER"
+        android:textColor="#FF5722"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.456"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/orange_border"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <LinearLayout
+            android:id="@+id/linearLayout7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:orientation="horizontal"
+            android:paddingLeft="50dp">
+
+            <EditText
+                android:id="@+id/editText_register_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/orange_border"
+                android:drawableLeft="@drawable/baseline_person_24"
+                android:drawablePadding="8dp"
+                android:ems="10"
+                android:hint="編號"
+                android:inputType="textPersonName"
+                android:padding="8dp"
+                android:textColorHint="#FF5722"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:orientation="horizontal"
+            android:paddingLeft="50dp">
+
+            <EditText
+                android:id="@+id/editTextText_register_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/baseline_person_pin_24"
+                android:background="@drawable/orange_border"
+                android:drawablePadding="8dp"
+                android:padding="8dp"
+                android:ems="10"
+                android:hint="姓名"
+                android:textColorHint="#FF5722"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:inputType="textPersonName"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:orientation="horizontal"
+            android:paddingLeft="50dp">
+
+            <EditText
+                android:id="@+id/editText_register_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/baseline_email_24"
+                android:background="@drawable/orange_border"
+                android:drawablePadding="8dp"
+                android:padding="8dp"
+                android:ems="10"
+                android:hint="信箱"
+                android:textColorHint="#FF5722"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:inputType="textEmailAddress" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:orientation="horizontal"
+            android:paddingLeft="50dp">
+
+            <EditText
+                android:id="@+id/editTextText_register_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/baseline_lock_24"
+                android:background="@drawable/orange_border"
+                android:drawablePadding="8dp"
+                android:padding="8dp"
+                android:ems="10"
+                android:hint="密碼"
+                android:textColorHint="#FF5722"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:inputType="textPassword"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginBottom="32dp"
+            android:text="下一步"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

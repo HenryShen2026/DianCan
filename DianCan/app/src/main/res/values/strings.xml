@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">線上購物</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="food_name">
+        <item>里肌豬排堡</item>
+        <item>椰香貝果</item>
+        <item>經典火腿蛋貝果</item>
+        <item>巧克力貝果</item>
+        <item>花生貝果</item>
+        <item>Bagel6</item>
+        <item>Bagel7</item>
+        <item>Bagel8</item>
+        <item>Bagel9</item>
+        <item>Bagel10</item>
+        <item>Bagel11</item>
+        <item>Bagel12</item>
+    </string-array>
+
+    <integer-array name="price">
+        <item>90</item>
+        <item>80</item>
+        <item>70</item>
+        <item>60</item>
+        <item>50</item>
+        <item>40</item>
+        <item>95</item>
+        <item>85</item>
+        <item>75</item>
+        <item>65</item>
+        <item>55</item>
+        <item>45</item>
+    </integer-array>
+
+
+    <string-array name="picture">
+        <item>@drawable/bagel1</item>
+        <item>@drawable/bagel2</item>
+        <item>@drawable/bagel3</item>
+        <item>@drawable/bagel4</item>
+        <item>@drawable/bagel5</item>
+        <item>@drawable/bagel6</item>
+        <item>@drawable/bagel7</item>
+        <item>@drawable/bagel8</item>
+        <item>@drawable/bagel9</item>
+        <item>@drawable/bagel10</item>
+        <item>@drawable/bagel11</item>
+        <item>@drawable/bagel12</item>
+
+    </string-array>
+</resources>
